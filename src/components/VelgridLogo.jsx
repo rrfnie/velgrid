@@ -43,7 +43,7 @@ export default function VelgridLogo({
     return (
       <img
         src={iconSrc}
-        alt="Velgrid"
+        alt="Velgrid — Solusi Pembuatan Website & Aplikasi Mobile"
         className={`${currentHeight} w-auto object-contain transition-all duration-200 hover:scale-105 ${className}`}
       />
     );
@@ -57,7 +57,7 @@ export default function VelgridLogo({
     return (
       <img
         src={src}
-        alt="Velgrid"
+        alt="Velgrid — Jasa Pembuatan Website & Aplikasi Mobile Berkelas"
         className={`${currentHeight} w-auto object-contain transition-opacity duration-200 hover:opacity-95 ${className}`}
       />
     );
@@ -74,7 +74,7 @@ export default function VelgridLogo({
     <div className={`inline-flex items-center ${className}`}>
       <img
         src={horizSrc}
-        alt="Velgrid"
+        alt="Velgrid — Jasa Pembuatan Website & Aplikasi Mobile"
         className={`${currentHeight} w-auto object-contain transition-opacity duration-200 hover:opacity-95`}
       />
     </div>

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Host & Sitemap Configuration for Search Engines
+Host: https://velgrid.vercel.app
+Sitemap: https://velgrid.vercel.app/sitemap.xml
+
