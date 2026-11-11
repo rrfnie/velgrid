@@ -6,7 +6,7 @@ export const siteConfig = {
   shortName: "Velgrid",
   whatsappNumber: "6282183952772",
   whatsappDisplay: "+62 821-8395-2772",
-  email: "contact@velgrid.com",
+  email: "teamvelgrid@gmail.com",
   promoCode: "OPENINGVELGRID",
   openWhatsApp: (message) => {
     const encoded = encodeURIComponent(message);

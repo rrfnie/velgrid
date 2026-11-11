@@ -101,10 +101,10 @@ export default function Footer() {
                 <li className="flex items-center gap-2.5">
                   <Mail className="w-4 h-4 text-sky-400 flex-shrink-0" />
                   <a
-                    href="mailto:contact@velgridtech.com"
+                    href={`mailto:${siteConfig.email || 'teamvelgrid@gmail.com'}`}
                     className="hover:text-sky-400 transition-colors"
                   >
-                    contact@velgridtech.com
+                    {siteConfig.email || 'teamvelgrid@gmail.com'}
                   </a>
                 </li>
                 <li className="flex items-center gap-2.5">

@@ -1,6 +1,6 @@
-# 🚀 Velmora Tech — Official Landing Page & Web Platform
+# 🚀 Velgrid — Solusi Pembuatan Website & Aplikasi Mobile Berkelas
 
-Modern, ultra-cepat, dan konversi-tinggi platform web untuk **Velmora Tech** (Penyedia solusi web & konsultasi IT untuk UMKM, instansi, & perorangan).
+Modern, ultra-cepat, dan konversi-tinggi platform web untuk **Velgrid** (Penyedia solusi web, aplikasi mobile Android/iOS, custom system & konsultasi IT untuk UMKM, instansi, & perorangan).
 
 Dibangun sesuai spesifikasi **Product Requirement Document (PRD) v1.2.0** menggunakan arsitektur **React SPA + Tailwind CSS + Lucide Icons**.
 
@@ -96,6 +96,6 @@ npm run preview
 ## 📱 Kontak Resmi & WhatsApp
 
 - **WhatsApp Resmi:** `+62 821-8395-2772` (`6282183952772`)
-- **Email:** `contact@velmoratech.com`
+- **Email:** `teamvelgrid@gmail.com`
 - Terpusat di file konfigurasi: `src/config/siteConfig.js`
 
