@@ -30,7 +30,7 @@ export default function Pricing() {
   return (
     <section
       id="harga"
-      className={`py-14 sm:py-20 relative scroll-mt-16 transition-colors duration-200 ${
+      className={`py-14 sm:py-20 relative scroll-mt-16 overflow-hidden transition-colors duration-200 ${
         isDark ? 'bg-slate-950/80 text-slate-100' : 'bg-slate-50/80 text-slate-900'
       }`}
     >

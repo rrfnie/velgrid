@@ -68,7 +68,7 @@ export default function Services() {
   return (
     <section
       id="layanan"
-      className={`py-14 sm:py-20 relative scroll-mt-16 transition-colors duration-200 ${
+      className={`py-14 sm:py-20 relative scroll-mt-16 overflow-hidden transition-colors duration-200 ${
         isDark ? 'bg-slate-950 text-slate-100' : 'bg-white text-slate-900'
       }`}
     >

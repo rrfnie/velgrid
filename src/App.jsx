@@ -27,17 +27,17 @@ function MainApp() {
       </AnimatePresence>
 
       <div
-        className={`min-h-screen flex flex-col font-sans selection:bg-sky-500 selection:text-white transition-colors duration-200 ${
+        className={`min-h-screen flex flex-col font-sans selection:bg-sky-500 selection:text-white transition-colors duration-200 overflow-x-hidden w-full max-w-full ${
           isDark ? 'dark bg-slate-950 text-slate-100' : 'bg-white text-slate-900'
         }`}
       >
         {/* Sticky Header: Clean Modern Navbar */}
-        <header className="sticky top-0 z-40 w-full">
+        <header className="sticky top-0 z-40 w-full overflow-x-clip">
           <Navbar />
         </header>
 
         {/* Main Content Sections */}
-        <main className="flex-1">
+        <main className="flex-1 overflow-x-hidden w-full max-w-full">
           {/* Hero Section with Live Design Engine Split Mockup */}
           <Hero />
 

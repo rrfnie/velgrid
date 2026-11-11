@@ -23,7 +23,7 @@ export default function VelgridPreloader({ onComplete }) {
     <motion.div
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.25, ease: 'easeInOut' } }}
-      className="fixed inset-0 top-0 left-0 right-0 bottom-0 w-full w-screen h-full h-screen h-[100dvh] min-h-[100dvh] z-[99999] flex flex-col items-center justify-center bg-slate-950 text-white select-none overflow-hidden m-0 p-4 touch-none"
+      className="fixed inset-0 top-0 left-0 right-0 bottom-0 w-full max-w-full h-full h-[100dvh] min-h-[100dvh] z-[99999] flex flex-col items-center justify-center bg-slate-950 text-white select-none overflow-hidden m-0 p-4 touch-none"
     >
       {/* Soft Ambient Radial Glow */}
       <div className="absolute w-80 h-80 rounded-full bg-sky-500/15 blur-3xl pointer-events-none" />

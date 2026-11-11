@@ -49,7 +49,7 @@ export default function Portfolio() {
   return (
     <section
       id="portofolio"
-      className={`py-12 sm:py-16 relative scroll-mt-16 transition-colors duration-200 ${
+      className={`py-12 sm:py-16 relative scroll-mt-16 overflow-hidden transition-colors duration-200 ${
         isDark ? 'bg-slate-950 text-slate-100' : 'bg-slate-50/60 text-slate-900'
       }`}
     >
