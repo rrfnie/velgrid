@@ -22,27 +22,37 @@ export default function Testimonials() {
 
   // Load reviews from initial data + custom saved reviews from localStorage
   const [reviews, setReviews] = useState(() => {
+    if (typeof window === 'undefined') return testimonialsData;
     try {
       const saved = localStorage.getItem('velgrid_custom_reviews');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          return [...parsed, ...testimonialsData];
+          const existingIds = new Set(testimonialsData.map((t) => t.id));
+          const validCustom = parsed.filter((item) => item && !existingIds.has(item.id));
+          return [...validCustom, ...testimonialsData];
         }
       }
-    } catch (e) {}
+    } catch (e) {
+      console.error('Error loading reviews from localStorage:', e);
+    }
     return testimonialsData;
   });
 
   const handleAddReview = (newReview) => {
-    setReviews((prev) => {
-      const updated = [newReview, ...prev];
-      try {
-        const customReviews = updated.filter((r) => r.isCustom);
-        localStorage.setItem('velgrid_custom_reviews', JSON.stringify(customReviews));
-      } catch (e) {}
-      return updated;
-    });
+    // 1. Simpan sinkron langsung ke localStorage agar tidak hilang saat refresh
+    try {
+      const saved = localStorage.getItem('velgrid_custom_reviews');
+      const existing = saved ? JSON.parse(saved) : [];
+      const filtered = existing.filter((item) => item.id !== newReview.id);
+      const updatedList = [newReview, ...filtered];
+      localStorage.setItem('velgrid_custom_reviews', JSON.stringify(updatedList));
+    } catch (e) {
+      console.error('Error saving review to localStorage:', e);
+    }
+
+    // 2. Perbarui state React
+    setReviews((prev) => [newReview, ...prev.filter((item) => item.id !== newReview.id)]);
   };
 
   const handleWhatsApp = () => {

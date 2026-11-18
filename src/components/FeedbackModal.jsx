@@ -126,6 +126,16 @@ export default function FeedbackModal({ isOpen, onClose, onSubmitReview }) {
       createdAt: new Date().toISOString()
     };
 
+    // Cadangan penyimpanan sinkron ke localStorage
+    try {
+      const saved = localStorage.getItem('velgrid_custom_reviews');
+      const existing = saved ? JSON.parse(saved) : [];
+      const filtered = existing.filter((item) => item.id !== newReview.id);
+      localStorage.setItem('velgrid_custom_reviews', JSON.stringify([newReview, ...filtered]));
+    } catch (e) {
+      console.error('Error saving in FeedbackModal:', e);
+    }
+
     onSubmitReview(newReview);
     setIsSubmitted(true);
     toast.success(
