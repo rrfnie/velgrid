@@ -60,7 +60,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo Velgrid */}
           <a
-            href="#"
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
             className="flex items-center group cursor-pointer"
             aria-label="Velgrid Beranda"
           >

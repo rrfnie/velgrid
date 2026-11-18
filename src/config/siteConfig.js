@@ -4,6 +4,7 @@
 export const siteConfig = {
   brandName: "Velgrid",
   shortName: "Velgrid",
+  domain: "https://velgrid.web.id",
   whatsappNumber: "6282183952772",
   whatsappDisplay: "+62 821-8395-2772",
   email: "teamvelgrid@gmail.com",

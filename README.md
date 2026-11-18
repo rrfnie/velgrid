@@ -21,7 +21,7 @@ Dibangun sesuai spesifikasi **Product Requirement Document (PRD) v1.2.0** menggu
 
 3. **Portofolio & Showcase Interaktif (`<Portfolio />`)**
    - Filter kategori dinamis berbasis React state (`all`, `landing-page`, `web-app`, `demo`).
-   - Proyek unggulan: *E-SIPAT*, *Landing Page Bagas Photocopy*, *Sistem E-Voting Mahasiswa*, *E-Menu Kopi Seduh Senja*, dan *Velmora SaaS UI Prototype*.
+   - Proyek unggulan: *E-SIPAT*, *Landing Page Bagas Photocopy*, *Sistem E-Voting Mahasiswa*, *E-Menu Kopi Seduh Senja*, dan *Velgrid SaaS UI Prototype*.
    - Modal detail interaktif untuk melihat fitur teknis, metrik dampak, dan tombol uji coba demo.
 
 4. **Kalkulator Estimasi Biaya Real-Time (`<Estimator />`)**
@@ -45,7 +45,7 @@ Dibangun sesuai spesifikasi **Product Requirement Document (PRD) v1.2.0** menggu
 ## 🛠️ Struktur Direktori Proyek
 
 ```text
-Velmora Tech/
+Velgrid Tech/
 ├── dist/                   # Production build bundle
 ├── src/
 │   ├── components/

@@ -10,7 +10,7 @@ const ThemeContext = createContext({
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('velgrid_theme') || localStorage.getItem('velmora_theme');
+      const savedTheme = localStorage.getItem('velgrid_theme');
       if (savedTheme === 'dark' || savedTheme === 'light') {
         return savedTheme;
       }
