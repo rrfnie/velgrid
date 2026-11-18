@@ -35,9 +35,10 @@ export default function Navbar() {
 
   const navLinks = [
     { label: t.nav.services, href: '#layanan' },
-    { label: t.nav.pricing || (isEn ? 'Pricing' : 'Paket Harga'), href: '#harga' },
     { label: t.nav.portfolio, href: '#portofolio' },
+    { label: t.nav.pricing || (isEn ? 'Pricing' : 'Paket Harga'), href: '#harga' },
     { label: t.nav.testimonials, href: '#testimoni' },
+    { label: isEn ? 'Contact' : 'Kontak', href: '#kontak' },
   ];
 
   const handleWhatsApp = () => {
@@ -72,7 +73,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-7 lg:gap-9">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}

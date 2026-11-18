@@ -8,8 +8,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TechStackMarquee from './components/TechStackMarquee';
 import Services from './components/Services';
-import Pricing from './components/Pricing';
 import Portfolio from './components/Portfolio';
+import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
@@ -36,28 +36,28 @@ function MainApp() {
           <Navbar />
         </header>
 
-        {/* Main Content Sections */}
+        {/* Main Content Sections (Mirip Futura Link Versi Velgrid) */}
         <main className="flex-1 overflow-x-hidden w-full max-w-full">
-          {/* Hero Section with Live Design Engine Split Mockup */}
+          {/* 1. Hero Section with Live Design Engine Code Mockup */}
           <Hero />
 
-          {/* Infinite Tech Stack Marquee (Running left continuous ticker) */}
+          {/* 2. Infinite Tech Stack Marquee (Running continuous ticker) */}
           <TechStackMarquee />
 
-          {/* Core Services: Capabilities (Web, Mobile, IoT, UI/UX) */}
+          {/* 3. Core Services / Arsitektur Layanan */}
           <Services />
 
-          {/* Pricing Plans: Transparent Packages & Investment */}
-          <Pricing />
-
-          {/* Portfolio & Showcase Section */}
+          {/* 4. Portfolio / Karya Unggulan */}
           <Portfolio />
 
-          {/* Testimonials & Client Feedback (Social Proof) */}
+          {/* 5. Pricing Plans / Investasi Sistem */}
+          <Pricing />
+
+          {/* 6. Testimonials & Client Feedback */}
           <Testimonials />
         </main>
 
-        {/* Footer & Floating WhatsApp */}
+        {/* 7. Footer / Lokasi & Kontak */}
         <Footer />
       </div>
     </>
